@@ -2847,6 +2847,7 @@ input, select, textarea {
 		
 		.features .image {
 			display: inline-block;
+			margin-left: 0em;
 			padding: 0.65em;
 			border-radius: 100%;
 			border: solid 1px;
@@ -3825,6 +3826,7 @@ input, select, textarea {
 			}
 
 		}
+
 
 
 
