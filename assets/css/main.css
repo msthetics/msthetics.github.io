@@ -224,7 +224,8 @@ input, select, textarea {
 		font-size: 2.5em;
 		line-height: 1.2;
 		background-color: #0D0D0D;
-		padding: 10em;
+		padding: 0.2em;
+		font: inherit;
 	}
 
 	h2 {
@@ -3117,7 +3118,7 @@ input, select, textarea {
 		}
 
 		#header.alt {
-			padding: 7em 5em 4em 5em ;
+			padding: 5em 5em 0em 5em ;
 		}
 
 			#header.alt h1 {
@@ -3814,6 +3815,7 @@ input, select, textarea {
 			}
 
 		}
+
 
 
 
