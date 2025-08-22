@@ -107,10 +107,39 @@ input, select, textarea {
 		background-image: url("images/overlay.png"), linear-gradient(45deg, #e37682 15%, #5f4d93 85%);
 	}
 */
-	body {
-	  background: conic-gradient(from 90deg at 1.1px 1.1px, #fffbdd 25%, #444444 0);
-	  background-size: 22px 22px; /* Adjust for desired square size */
-	}
+			/* Tweak these to taste */
+		:root {
+		  --check-size: 28px;           /* size of each square */
+		  --check-a: #D9CBBA;           /* light square */
+		  --check-b: #0D0D0D;           /* dark square */
+		  --sheen: hsla(0,0%,100%,0.35);/* soft highlight */
+		}
+		
+		/* Apply to any element you want */
+		.checked-bg {
+		  /* Subtle “paper” base */
+		  background-color: var(--check-a);
+		
+		  /* Checker pattern */
+		  background-image:
+		    linear-gradient(45deg, var(--sheen), transparent 60%),            /* soft top-left sheen */
+		    linear-gradient(0deg, var(--check-b) 50%, transparent 50%),
+		    linear-gradient(90deg, var(--check-b) 50%, transparent 50%);
+		
+		  background-size:
+		    calc(var(--check-size) * 4) calc(var(--check-size) * 4),          /* sheen scale */
+		    var(--check-size) var(--check-size),                               /* rows */
+		    var(--check-size) var(--check-size);                               /* columns */
+		
+		  background-position:
+		    0 0,
+		    0 0,
+		    0 0;
+		
+		  /* Optional: smooth corners + inner padding have a nice effect on sections */
+		  border-radius: 16px;
+		}
+
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
 			-moz-animation: none !important;
 			-webkit-animation: none !important;
@@ -125,7 +154,6 @@ input, select, textarea {
 /* Type */
 
 	body {
-		background-color: #935d8c;
 		color: rgba(255, 255, 255, 0.65);
 	}
 
@@ -3802,4 +3830,5 @@ input, select, textarea {
 			}
 
 		}
+
 
