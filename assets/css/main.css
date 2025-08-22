@@ -2847,10 +2847,10 @@ input, select, textarea {
 		
 		.features .image {
 			display: inline-block;
-			margin-left: 4em;
 			padding: 0.65em;
 			border-radius: 100%;
 			border: solid 1px;
+			border-color: #0D0D0D;
 		}
 
 			.features .image img {
@@ -3041,7 +3041,8 @@ input, select, textarea {
 			margin-left: 4em;
 			padding: 0.65em;
 			border-radius: 100%;
-			border: solid 1px;
+			border: solid 2px;
+			border-color: #D9CBBA;
 		}
 
 			.spotlight .image img {
@@ -3824,6 +3825,7 @@ input, select, textarea {
 			}
 
 		}
+
 
 
 
