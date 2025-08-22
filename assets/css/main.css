@@ -2824,6 +2824,20 @@ input, select, textarea {
 			margin-top: 3em;
 			padding: 0;
 		}
+		
+		.features .image {
+			display: inline-block;
+			margin-left: 4em;
+			padding: 0.65em;
+			border-radius: 100%;
+			border: solid 1px;
+		}
+
+			.features .image img {
+				display: block;
+				border-radius: 100%;
+				width: 16em;
+			}
 
 			.features li:nth-child(1), .features li:nth-child(2), .features li:nth-child(3) {
 				margin-top: 0;
@@ -3788,3 +3802,4 @@ input, select, textarea {
 			}
 
 		}
+
