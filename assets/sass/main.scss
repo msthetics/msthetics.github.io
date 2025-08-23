@@ -24,6 +24,32 @@
 		xxsmall:  ( null,    360px  )
 	));
 
+//Checked backgrounds
+//variables
+$check-size: 57px;
+$check-light: #D9CBBA;           /* light square */
+$check-dark: #0D0D0D;           /* dark square */	
+$check-green: #31773d;			/* green square */	
+$check-blue: #27326d;			/* blue squares */
+$check-pink: #AA817E;
+$check-warmlight: #FBEED2;
+$check-toasted: #84592B;
+
+	@mixin checked-bg($light: $check-light, $dark: $check-dark, $size: $check-size) {
+	  background: conic-gradient(from 90deg, #{$light} 25%, #{$dark} 0 50%, #{$light} 0 75%, #{$dark} 0)
+	    0 0 / calc(#{$size} * 2) calc(#{$size} * 2);
+	  border-radius: 12px; // optional
+	  background-position: center center;
+	}
+	
+	// different color backgrounds:
+	.checked-bg {@include checked-bg($check-light, $check-dark, $check-size);}
+	.checked-bg-green {@include checked-bg($check-light, $check-green, $check-size);}
+	.checked-bg-blue {@include checked-bg($check-light, $check-blue, $check-size);}
+	.checked-bg-pink {@include checked-bg($check-light, $check-pink, $check-size);}
+	.checked-bg-toasted {@include checked-bg($check-light, $check-toasted, $check-size);}
+
+
 // Mixins.
 
 	@mixin color($p) {
@@ -67,4 +93,5 @@
 	@import 'layout/nav';
 	@import 'layout/main';
 	@import 'layout/footer';
+
 	@import 'layout/wrapper';
