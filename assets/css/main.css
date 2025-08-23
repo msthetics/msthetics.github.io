@@ -2398,6 +2398,12 @@ input, select, textarea {
 		position: relative;
 		width: 20em;
 	}
+		
+		.imageTitle img {
+			border-radius: 8px;
+			display: block;
+			width: 20em;
+		}
 
 	}
 	.image {
@@ -3839,6 +3845,7 @@ input, select, textarea {
 			}
 
 		}
+
 
 
 
