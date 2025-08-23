@@ -86,7 +86,7 @@
 			}
 		}
 
-		@include breakpoint('<=480px') {
+		@include breakpoint('<=xsmall') {
 			display: none;
 
 			& + #main {
@@ -95,4 +95,5 @@
 		}
 
 	}
+
 
