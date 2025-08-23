@@ -2881,7 +2881,7 @@ input, select, textarea {
 			margin-top: 3em;
 			padding: 0;
 		}
-		
+
 		.features .image {
 			display: inline-block;
 			margin-left: 0em;
@@ -2892,6 +2892,11 @@ input, select, textarea {
 				display: block;
 				border-radius: 8px;
 				width: 16em;
+			}
+
+			.features .image img:hover {
+				transform: scale(1.1);
+				background-color: #8C8480;
 			}
 
 			.features li:nth-child(1), .features li:nth-child(2), .features li:nth-child(3) {
@@ -3884,6 +3889,7 @@ input, select, textarea {
 			}
 
 		}
+
 
 
 
