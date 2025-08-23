@@ -124,8 +124,8 @@ input, select, textarea {
 		  	--check-size: 57px;           /* size of each square */
 		  	--light: #D9CBBA;           /* light square */
 		  	--dark: #0D0D0D;           /* dark square */
-			--green: #8AD196;			/* green square */
-			--blue: #8793D1;			/* blue squares */
+			--green: #31773d;			/* green square */
+			--blue: #27326d;			/* blue squares */
 		}
 		
 		/* Apply to any element you want */
@@ -3888,6 +3888,7 @@ input, select, textarea {
 			}
 
 		}
+
 
 
 
