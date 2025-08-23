@@ -3386,7 +3386,7 @@ input, select, textarea {
 					font-size: 0.9em;
 				}
 
-		@media screen and (max-width: 736px) {
+		@media screen and (max-width: 50px) {
 
 			#nav {
 				display: none;
@@ -3852,6 +3852,7 @@ input, select, textarea {
 			}
 
 		}
+
 
 
 
