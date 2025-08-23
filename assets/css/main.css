@@ -504,7 +504,8 @@ input, select, textarea {
 
 				.tiles article > a h2 {
 					margin: 0;
-					color: #ffffff;
+					color: #ffffff !important;
+					font-size: 2em !important;
 				}
 
 				.tiles article > a .content {
@@ -4154,6 +4155,7 @@ input, select, textarea {
 			}
 
 		}
+
 
 
 
