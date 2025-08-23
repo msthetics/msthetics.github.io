@@ -3386,10 +3386,10 @@ input, select, textarea {
 					font-size: 0.9em;
 				}
 
-		@media screen and (max-width: 50px) {
+		@media screen and (max-width: 736px) {
 
 			#nav {
-				display: none;
+				padding: 0.5em;
 			}
 
 				#nav + #main {
@@ -3398,6 +3398,33 @@ input, select, textarea {
 
 		}
 
+		@media screen and (max-width: 480px) {
+
+			#nav {
+				padding: 0.5em;
+				max-width: calc(100% - 2em);
+			}
+
+				#nav + #main {
+					padding-top: 0;
+				}
+
+		}
+
+		@media screen and (max-width: 360px) {
+
+			#nav {
+				padding: 0.5em;
+				max-width: calc(100% - 0em);
+				border-top-left-radius: 0em;
+    			border-top-right-radius: 0em;
+			}
+
+				#nav + #main {
+					padding-top: 0;
+				}
+
+		}
 /* Main */
 
 	#main {
@@ -3852,6 +3879,7 @@ input, select, textarea {
 			}
 
 		}
+
 
 
 
