@@ -378,6 +378,57 @@ input, select, textarea {
 	hr {
 		border-bottom-color: rgba(255, 255, 255, 0.35);
 	}
+
+/* Thumbnails */
+.thumbnail {
+  width: 250px;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: transform 0.3s;
+}
+
+.thumbnail:hover {
+  transform: scale(1.05);
+}
+
+/* Modal container */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.85);
+  justify-content: center;
+  align-items: center;
+}
+
+/* Enlarged image */
+.modal img {
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+}
+
+/* Close button */
+.close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  font-size: 2rem;
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.close:hover {
+  color: #f44336; /* red on hover */
+}
+
 /* Tiles */
 
 	.tiles {
@@ -4155,6 +4206,7 @@ input, select, textarea {
 			}
 
 		}
+
 
 
 
