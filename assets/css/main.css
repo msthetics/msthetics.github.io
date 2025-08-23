@@ -237,8 +237,7 @@ input, select, textarea {
 		line-height: 1.2;
 		background-color: #0D0D0D;
 		padding: 0.2em;
-		font-family: "Dream Avenue", sans-serif;
-  		font-style: normal;
+		width: 20em;
 	}
 
 	h2 {
@@ -3832,6 +3831,7 @@ input, select, textarea {
 			}
 
 		}
+
 
 
 
