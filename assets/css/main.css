@@ -14,11 +14,19 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 
 */
-.italiana-regular {
-  font-family: "Italiana", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-}
+/* Tweak these to taste */
+		
+:root {
+	--check-size: 57px;           /* size of each square */
+	--white: #ffffff;
+	--light: #D9CBBA;           /* light square */
+	--dark: #0D0D0D;           /* dark square */	
+	--green: #31773d;			/* green square */	
+	--blue: #27326d;			/* blue squares */
+	--pink: #AA817E;
+	--warmlight: #FBEED2;
+	--toasted: #84592B;
+		}
 
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
@@ -119,14 +127,6 @@ input, select, textarea {
 		background-image: url("images/overlay.png"), linear-gradient(45deg, #e37682 15%, #5f4d93 85%);
 	}
 */
-			/* Tweak these to taste */
-		:root {
-		  	--check-size: 57px;           /* size of each square */
-		  	--light: #D9CBBA;           /* light square */
-		  	--dark: #0D0D0D;           /* dark square */
-			--green: #31773d;			/* green square */
-			--blue: #27326d;			/* blue squares */
-		}
 		
 		/* Apply to any element you want */
 		.checked-bg {
@@ -253,7 +253,7 @@ input, select, textarea {
 	h1 {
 		font-size: 2.5em;
 		line-height: 1.2;
-		background-color: #0D0D0D;
+		background-color: var(--dark);
 		padding: 0.2em;
 		width: 20em;
 	}
@@ -351,19 +351,19 @@ input, select, textarea {
 	}
 
 	input, select, textarea {
-		color: #ffffff;
+		color: var(--white);
 	}
 
 	a:hover {
-		color: #ffffff;
+		color: var(--white);
 	}
 
 	strong, b {
-		color: #ffffff;
+		color: var(--white);
 	}
 
 	h1, h2, h3, h4, h5, h6 {
-		color: #ffffff;
+		color: var(--white);
 	}
 
 	blockquote {
@@ -539,7 +539,7 @@ input, select, textarea {
 				padding: 1em;
 				border-radius: 8px;
 				border-bottom: 0;
-				color: #ffffff;
+				color: var(--white);
 				text-align: center;
 				text-decoration: none;
 				z-index: 3;
@@ -550,12 +550,12 @@ input, select, textarea {
 				}
 
 				.tiles article > a:hover {
-					color: #ffffff !important;
+					color: var(--white) !important;
 				}
 
 				.tiles article > a h2 {
 					margin: 0;
-					color: #ffffff !important;
+					color: var(--white) !important;
 					font-size: 2em !important;
 				}
 
@@ -576,15 +576,15 @@ input, select, textarea {
 					}
 
 			.tiles article.style1 > .image:before {
-				background-color: #f2849e;
+				background-color: var(--pink);
 			}
 
 			.tiles article.style2 > .image:before {
-				background-color: #7ecaf6;
+				background-color: var(--warmlight);
 			}
 
 			.tiles article.style3 > .image:before {
-				background-color: #7bd0c1;
+				background-color: var(--toasted);
 			}
 
 			.tiles article.style4 > .image:before {
@@ -2290,7 +2290,7 @@ input, select, textarea {
 	.button {
 		background-color: transparent;
 		box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.35);
-		color: #ffffff !important;
+		color: var(--white) !important;
 	}
 
 		input[type="submit"]:hover,
@@ -2323,7 +2323,7 @@ input, select, textarea {
 		button.primary,
 		.button.primary {
 			background-color: #8cc9f0;
-			color: #ffffff !important;
+			color: var(--white) !important;
 			box-shadow: none;
 		}
 
@@ -2348,7 +2348,7 @@ input, select, textarea {
 			input[type="button"].primary.icon:before,
 			button.primary.icon:before,
 			.button.primary.icon:before {
-				color: #ffffff !important;
+				color: var(--white) !important;
 			}
 
 /* Form */
@@ -2505,7 +2505,7 @@ input, select, textarea {
 	}
 
 	label {
-		color: #ffffff;
+		color: var(--white);
 	}
 
 	input[type="text"],
@@ -2531,7 +2531,7 @@ input, select, textarea {
 	}
 
 		select option {
-			color: #ffffff;
+			color: var(--white);
 			background: #935d8c;
 		}
 
@@ -2548,8 +2548,8 @@ input, select, textarea {
 
 	input[type="checkbox"]:checked + label:before,
 	input[type="radio"]:checked + label:before {
-		background-color: #ffffff;
-		border-color: #ffffff;
+		background-color: var(--white);
+		border-color: var(--white);
 		color: #935d8c;
 	}
 
@@ -2714,7 +2714,7 @@ input, select, textarea {
 
 	.icon.alt {
 		border-color: rgba(255, 255, 255, 0.35);
-		color: #ffffff;
+		color: var(--white);
 	}
 
 		.icon.alt:hover {
@@ -2867,7 +2867,7 @@ input, select, textarea {
 	}
 
 	dl dt {
-		color: #ffffff;
+		color: var(--white);
 	}
 
 /* Actions */
@@ -3156,7 +3156,7 @@ input, select, textarea {
 		}
 
 	table th {
-		color: #ffffff;
+		color: var(--white);
 	}
 
 	table thead {
@@ -3275,7 +3275,7 @@ input, select, textarea {
 			-ms-flex: 1;
 			flex: 1;
 			padding: 1.5em;
-			color: #ffffff;
+			color: var(--white);
 			text-align: center;
 		}
 
@@ -3399,7 +3399,7 @@ input, select, textarea {
 			padding: 0.65em;
 			border-radius: 100%;
 			border: solid 2px;
-			border-color: #D9CBBA;
+			border-color: var(--light);
 		}
 
 			.spotlight .image img {
@@ -3618,8 +3618,8 @@ input, select, textarea {
 		-webkit-transition: background-color 0.2s ease, border-top-left-radius 0.2s ease, border-top-right-radius 0.2s ease, padding 0.2s ease;
 		-ms-transition: background-color 0.2s ease, border-top-left-radius 0.2s ease, border-top-right-radius 0.2s ease, padding 0.2s ease;
 		transition: background-color 0.2s ease, border-top-left-radius 0.2s ease, border-top-right-radius 0.2s ease, padding 0.2s ease;
-		background-color: #ffffff;
-		color: #0D0D0D;
+		background-color: var(--white);
+		color: var(--dark);
 		position: absolute;
 		width: 64em;
 		max-width: calc(100% - 4em);
@@ -3632,19 +3632,19 @@ input, select, textarea {
 	}
 
 		#nav input, #nav select, #nav textarea {
-			color: #0D0D0D;
+			color: var(--dark);
 		}
 
 		#nav a:hover {
-			color: #0D0D0D;
+			color: var(--dark);
 		}
 
 		#nav strong, #nav b {
-			color: #0D0D0D;
+			color: var(--dark);
 		}
 
 		#nav h1, #nav h2, #nav h3, #nav h4, #nav h5, #nav h6 {
-			color: #0D0D0D;
+			color: var(--dark);
 		}
 
 		#nav blockquote {
@@ -3700,7 +3700,7 @@ input, select, textarea {
 					}
 
 					#nav ul li a.active {
-						background-color: #ffffff;
+						background-color: var(--white);
 						box-shadow: none;
 					}
 
@@ -3756,25 +3756,25 @@ input, select, textarea {
 /* Main */
 
 	#main {
-		background-color: #ffffff;
-		color: #0D0D0D;
+		background-color: var(--white);
+		color: var(--dark);
 		border-radius: 1em;
 	}
 
 		#main input, #main select, #main textarea {
-			color: #0D0D0D;
+			color: var(--dark);
 		}
 
 		#main a:hover {
-			color: #0D0D0D;
+			color: var(--dark);
 		}
 
 		#main strong, #main b {
-			color: #0D0D0D;
+			color: var(--dark);
 		}
 
 		#main h1, #main h2, #main h3, #main h4, #main h5, #main h6 {
-			color: #0D0D0D;
+			color: var(--dark);
 		}
 
 		#main blockquote {
@@ -3801,7 +3801,7 @@ input, select, textarea {
 		#main .button {
 			background-color: transparent;
 			box-shadow: inset 0 0 0 1px #dddddd;
-			color: #0D0D0D !important;
+			color: var(--dark) !important;
 		}
 
 			#main input[type="submit"]:hover,
@@ -3834,7 +3834,7 @@ input, select, textarea {
 			#main button.primary,
 			#main .button.primary {
 				background-color: #8cc9f0;
-				color: #ffffff !important;
+				color: var(--white) !important;
 				box-shadow: none;
 			}
 
@@ -3859,11 +3859,11 @@ input, select, textarea {
 				#main input[type="button"].primary.icon:before,
 				#main button.primary.icon:before,
 				#main .button.primary.icon:before {
-					color: #ffffff !important;
+					color: var(--white) !important;
 				}
 
 		#main label {
-			color: #0D0D0D;
+			color: var(--dark);
 		}
 
 		#main input[type="text"],
@@ -3889,13 +3889,13 @@ input, select, textarea {
 		}
 
 			#main select option {
-				color: #0D0D0D;
-				background: #ffffff;
+				color: var(--dark);
+				background: var(--white);
 			}
 
 		#main input[type="checkbox"] + label,
 		#main input[type="radio"] + label {
-			color: #0D0D0D;
+			color: var(--dark);
 		}
 
 			#main input[type="checkbox"] + label:before,
@@ -3906,9 +3906,9 @@ input, select, textarea {
 
 		#main input[type="checkbox"]:checked + label:before,
 		#main input[type="radio"]:checked + label:before {
-			background-color: #0D0D0D;
-			border-color: #0D0D0D;
-			color: #ffffff;
+			background-color: var(--dark);
+			border-color: var(--dark);
+			color: var(--white);
 		}
 
 		#main input[type="checkbox"]:focus + label:before,
@@ -3947,7 +3947,7 @@ input, select, textarea {
 
 		#main .icon.alt {
 			border-color: #dddddd;
-			color: #0D0D0D;
+			color: var(--dark);
 		}
 
 			#main .icon.alt:hover {
@@ -3963,11 +3963,11 @@ input, select, textarea {
 		}
 
 		#main dl dt {
-			color: #0D0D0D;
+			color: var(--dark);
 		}
 
 		#main header.major h2:after {
-			background-color: #D9CBBA;
+			background-color: var(--light);
 			/*
 			background-image: -moz-linear-gradient(90deg, #efa8b0, #a89cc8, #8cc9f0);
 			background-image: -webkit-linear-gradient(90deg, #efa8b0, #a89cc8, #8cc9f0);
@@ -3985,7 +3985,7 @@ input, select, textarea {
 			}
 
 		#main table th {
-			color: #0D0D0D;
+			color: var(--dark);
 		}
 
 		#main table thead {
@@ -4206,6 +4206,7 @@ input, select, textarea {
 			}
 
 		}
+
 
 
 
