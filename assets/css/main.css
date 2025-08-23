@@ -121,7 +121,7 @@ input, select, textarea {
 */
 			/* Tweak these to taste */
 		:root {
-		  --check-size: 60px;           /* size of each square */
+		  --check-size: 57px;           /* size of each square */
 		  --light: #D9CBBA;           /* light square */
 		  --dark: #0D0D0D;           /* dark square */
 		}
@@ -3852,6 +3852,7 @@ input, select, textarea {
 			}
 
 		}
+
 
 
 
