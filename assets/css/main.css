@@ -3283,12 +3283,12 @@ input, select, textarea {
 		-ms-transition: background-color 0.2s ease, border-top-left-radius 0.2s ease, border-top-right-radius 0.2s ease, padding 0.2s ease;
 		transition: background-color 0.2s ease, border-top-left-radius 0.2s ease, border-top-right-radius 0.2s ease, padding 0.2s ease;
 		background-color: #ffffff;
-		color: #D9CBBA;
+		color: #0D0D0D;
 		position: absolute;
 		width: 64em;
 		max-width: calc(100% - 4em);
 		padding: 1em;
-		background-color: #0D0D0D;
+		background-color: #D9CBBA;
 		border-top-left-radius: 1em;
 		border-top-right-radius: 1em;
 		cursor: default;
@@ -3413,7 +3413,7 @@ input, select, textarea {
 			}
 
 				#nav + #main {
-					padding-top: 1.5em;
+					padding-top: 2em;
 				}
 
 		}
@@ -3871,6 +3871,7 @@ input, select, textarea {
 			}
 
 		}
+
 
 
 
