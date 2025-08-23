@@ -121,9 +121,11 @@ input, select, textarea {
 */
 			/* Tweak these to taste */
 		:root {
-		  --check-size: 57px;           /* size of each square */
-		  --light: #D9CBBA;           /* light square */
-		  --dark: #0D0D0D;           /* dark square */
+		  	--check-size: 57px;           /* size of each square */
+		  	--light: #D9CBBA;           /* light square */
+		  	--dark: #0D0D0D;           /* dark square */
+			--green: #8AD196;			/* green square */
+			--blue: #8793D1;			/* blue squares */
 		}
 		
 		/* Apply to any element you want */
@@ -135,6 +137,21 @@ input, select, textarea {
 			background-position: center center;
 		}
 
+		.checked-bg-green {
+		  	background:
+		    	conic-gradient(from 90deg, var(--light) 25%, var(--green) 0 50%, var(--light) 0 75%, var(--green) 0) 0 0 / 
+		    	calc(var(--check-size)*2) calc(var(--check-size)*2);
+		  	border-radius: 12px; /* optional */
+			background-position: center center;
+		}
+
+		.checked-bg-blue {
+		  	background:
+		    	conic-gradient(from 90deg, var(--light) 25%, var(--blue) 0 50%, var(--light) 0 75%, var(--blue) 0) 0 0 / 
+		    	calc(var(--check-size)*2) calc(var(--check-size)*2);
+		  	border-radius: 12px; /* optional */
+			background-position: center center;
+		}
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
 			-moz-animation: none !important;
 			-webkit-animation: none !important;
@@ -3871,6 +3888,7 @@ input, select, textarea {
 			}
 
 		}
+
 
 
 
