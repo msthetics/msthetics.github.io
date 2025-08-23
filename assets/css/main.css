@@ -121,7 +121,7 @@ input, select, textarea {
 */
 			/* Tweak these to taste */
 		:root {
-		  --check-size: 30px;           /* size of each square */
+		  --check-size: 60px;           /* size of each square */
 		  --light: #D9CBBA;           /* light square */
 		  --dark: #0D0D0D;           /* dark square */
 		}
@@ -2391,7 +2391,15 @@ input, select, textarea {
 		}
 
 /* Image */
+	.imageTitle {
+		border-radius: 8px;
+		border: 0;
+		display: inline-block;
+		position: relative;
+		width: 20em;
+	}
 
+	}
 	.image {
 		border-radius: 8px;
 		border: 0;
@@ -3831,6 +3839,7 @@ input, select, textarea {
 			}
 
 		}
+
 
 
 
