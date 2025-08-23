@@ -128,12 +128,13 @@ input, select, textarea {
 	}
 */
 		
+
 		/* Apply to any element you want */
-		.checked-bg {
+/* 		.checked-bg {
 		  	background:
 		    	conic-gradient(from 90deg, var(--light) 25%, var(--dark) 0 50%, var(--light) 0 75%, var(--dark) 0) 0 0 / 
 		    	calc(var(--check-size)*2) calc(var(--check-size)*2);
-		  	border-radius: 12px; /* optional */
+		  	border-radius: 12px;
 			background-position: center center;
 		}
 
@@ -141,7 +142,7 @@ input, select, textarea {
 		  	background:
 		    	conic-gradient(from 90deg, var(--light) 25%, var(--green) 0 50%, var(--light) 0 75%, var(--green) 0) 0 0 / 
 		    	calc(var(--check-size)*2) calc(var(--check-size)*2);
-		  	border-radius: 12px; /* optional */
+		  	border-radius: 12px;
 			background-position: center center;
 		}
 
@@ -149,9 +150,10 @@ input, select, textarea {
 		  	background:
 		    	conic-gradient(from 90deg, var(--light) 25%, var(--blue) 0 50%, var(--light) 0 75%, var(--blue) 0) 0 0 / 
 		    	calc(var(--check-size)*2) calc(var(--check-size)*2);
-		  	border-radius: 12px; /* optional */
+		  	border-radius: 12px;
 			background-position: center center;
-		}
+		} */
+
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
 			-moz-animation: none !important;
 			-webkit-animation: none !important;
@@ -4206,6 +4208,7 @@ input, select, textarea {
 			}
 
 		}
+
 
 
 
